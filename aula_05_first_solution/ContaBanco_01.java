@@ -1,13 +1,13 @@
 package aula05_first_solution;
 
-public class ContaBanco {
+public class ContaBanco_01 {
     public int numConta;
     protected String tipo;
     private String dono;
     private float saldo;
-    static String status;
+    private boolean status;
 
-    public ContaBanco(int numConta, String tipo, String dono, float saldo) {
+    public ContaBanco_01(int numConta, String tipo, String dono, float saldo) {
         this.numConta = numConta;
         this.tipo = tipo;
         this.dono = dono;
@@ -46,12 +46,12 @@ public class ContaBanco {
         this.saldo = saldo;
     }
 
-    public static String getStatus() {
+    public boolean isStatus() {
         return status;
     }
 
-    public static void setStatus(String status) {
-        ContaBanco.status = status;
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
     public void cuentaInfo() {
